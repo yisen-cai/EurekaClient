@@ -1,14 +1,14 @@
 eureka:
   instance:
-    hostname: client
+    hostname: localhost
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/,http://localhost:8763/eureka/
 spring:
   application:
-    name: eureka-client1
+    name: eureka-client
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/hello?useSSL=false&characterEncoding=utf-8
+    url: jdbc:mysql://39.108.9.18:3306/hello?useSSL=false&characterEncoding=utf-8
     username: root
     password: sen515216
     driver-class-name: com.mysql.jdbc.Driver
@@ -16,6 +16,5 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-
 server:
-  port: 8081
+  port: 8080

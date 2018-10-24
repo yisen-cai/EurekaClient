@@ -9,7 +9,7 @@ import top.yisen614.client.Result;
  * Created by 蔡宜身
  * 2018/09/07
  */
-@RestController(value = "goods")
+@RestController
 public class GoodsController {
 
 	@GetMapping(value = "/")
