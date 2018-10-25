@@ -1,17 +1,19 @@
 eureka:
   instance:
-    hostname: localhost
+    hostname: client
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/,http://localhost:8763/eureka/
+      defaultZone: http://localhost:8761/eureka/
 spring:
   application:
-    name: eureka-client
+    name: client
   datasource:
+    driver-class-name: org.gjt.mm.mysql.Driver
     url: jdbc:mysql://39.108.9.18:3306/hello?useSSL=false&characterEncoding=utf-8
     username: root
     password: sen515216
-    driver-class-name: com.mysql.jdbc.Driver
   jpa:
     show-sql: true
     hibernate:

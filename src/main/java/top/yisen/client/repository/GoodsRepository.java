@@ -1,7 +1,7 @@
-package top.yisen614.client.repository;
+package top.yisen.client.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import top.yisen614.client.entity.Goods;
+import top.yisen.client.entity.Goods;
 
 import java.util.List;
 

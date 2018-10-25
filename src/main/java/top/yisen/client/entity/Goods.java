@@ -1,4 +1,4 @@
-package top.yisen614.client.entity;
+package top.yisen.client.entity;
 
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;

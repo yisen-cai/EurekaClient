@@ -1,4 +1,4 @@
-package top.yisen614.client;
+package top.yisen.client;
 
 /**
  * Created by 蔡宜身

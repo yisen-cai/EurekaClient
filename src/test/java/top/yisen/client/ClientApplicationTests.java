@@ -1,4 +1,4 @@
-package top.yisen614.client;
+package top.yisen.client;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
