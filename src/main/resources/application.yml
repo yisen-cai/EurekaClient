@@ -2,7 +2,7 @@ eureka:
   instance:
     hostname: client
     prefer-ip-address: true
-    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    instance-id: http://localhost:${server.port}
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
@@ -11,12 +11,12 @@ spring:
     name: client
   datasource:
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://39.108.9.18:3306/hello?useSSL=false&characterEncoding=utf-8
+    url: jdbc:mysql://39.108.9.18:3306/eureka?useSSL=false&characterEncoding=utf-8
     username: root
-    password: sen515216
+    password: caiyisen
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
 server:
-  port: 8080
+  port: 8090
